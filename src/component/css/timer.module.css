@@ -1,0 +1,14 @@
+.button {
+  background-color: rgb(153, 250, 218);
+  border-radius: 5px;
+  margin: 5px;
+}
+.btn {
+  background-color: rgb(153, 250, 218);
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.btnselect {
+  background-color: rgb(67, 197, 154);
+  margin: 5px;
+}
