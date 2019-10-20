@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import styles from "../css/cunter.module.css";
+import styles from "../css/counter.module.css";
 
-function CunterFunc() {
+function UseCounter() {
   let [value, setValue] = useState(0);
 
-  let icrement = () => {
+  let increment = () => {
     setValue(value + 1);
   };
 
@@ -15,7 +15,7 @@ function CunterFunc() {
   return (
     <div>
       <h2>{value}</h2>
-      <button onClick={icrement} className={styles.button}>
+      <button onClick={increment} className={styles.button}>
         icrement
       </button>
       <button onClick={decrement} className={styles.button}>
@@ -24,4 +24,4 @@ function CunterFunc() {
     </div>
   );
 }
-export default CunterFunc;
+export default UseCounter;

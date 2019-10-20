@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
 import Timer from "./component/timer/timer";
-import TimerFunc from "./component/timer/timerFunctional";
-import CunterFunc from "./component/cunter/cunterFunctional";
-import Cunter from "./component/cunter/cunter.js";
+import UseTimer from "./component/timer/timerFunctional";
+import UseCounter from "./component/counter/counterFunctional";
+import Counter from "./component/counter/counter.js";
 import AddToDo from "./component/addTodo/addToDo";
 
 function App() {
   return (
     <div className="App">
-      <Cunter />
-      <CunterFunc />
+      <Counter />
+      <UseCounter />
       <Timer />
-      <TimerFunc />
+      <UseTimer />
       <AddToDo />
     </div>
   );

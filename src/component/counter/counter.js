@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import styles from "../css/cunter.module.css";
+import styles from "../css/counter.module.css";
 
-class Cunter extends Component {
+class Counter extends Component {
   state = {
     value: 0
   };
 
-  icrement = () => {
+  increment = () => {
     this.setState({
       value: this.state.value + 1
     });
@@ -19,10 +19,12 @@ class Cunter extends Component {
   };
 
   render() {
+    let { value } = this.state;
+
     return (
       <div>
-        <h2>{this.state.value}</h2>
-        <button onClick={this.icrement} className={styles.button}>
+        <h2>{value}</h2>
+        <button onClick={this.increment} className={styles.button}>
           icrement
         </button>
         <button onClick={this.decrement} className={styles.button}>
@@ -33,4 +35,4 @@ class Cunter extends Component {
   }
 }
 
-export default Cunter;
+export default Counter;

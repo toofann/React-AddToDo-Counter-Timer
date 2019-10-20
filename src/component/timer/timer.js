@@ -40,9 +40,10 @@ class Timer extends Component {
   };
 
   render() {
+    let { value, started } = this.state;
     return (
       <div>
-        <h2>{this.state.value}</h2>
+        <h2>{value}</h2>
         <button onClick={this.start} className={styles.button}>
           start
         </button>
@@ -53,7 +54,7 @@ class Timer extends Component {
           reset
         </button>
         <button onClick={this.toggle} className={styles.button}>
-          {this.state.started ? "toggle stop" : "toggle start"}
+          {started ? "toggle stop" : "toggle start"}
         </button>
       </div>
     );
