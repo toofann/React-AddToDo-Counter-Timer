@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Timer from "./component/timer/timer";
 import UseTimer from "./component/timer/timerFunctional";
 import UseCounter from "./component/counter/counterFunctional";

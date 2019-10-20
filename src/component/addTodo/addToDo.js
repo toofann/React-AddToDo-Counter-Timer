@@ -129,6 +129,7 @@ class AddToDo extends Component {
 
         <div>
           <input
+            className={styles.input}
             value={this.state.inputvalue}
             onChange={this.handelChange}
           ></input>
