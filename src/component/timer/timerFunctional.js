@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../css/timer.module.css";
 
 let interval = null;
-function TimerFunc() {
+function UseTimer() {
   let [value, setValue] = useState(0);
   let [started, setStarted] = useState(false);
 
@@ -55,4 +55,4 @@ function TimerFunc() {
   );
 }
 
-export default TimerFunc;
+export default UseTimer;
